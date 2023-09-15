@@ -48,8 +48,8 @@ This is a high-level view of how the different microservices interact with each 
 | Services                        | Description                                                      |
 | ------------------------------- | ---------------------------------------------------------------- |
 | [users](users/)                 | Provides user management, authentication, and authorization.     |
-| [bet](bet/)                     | Manages all bet operations.                                      |
-| [notifications](notifications/) | Manages sending user notifications.                              |
+| [bet](bet/)                     | Manages all bet operations create,cancel.                        |
+| [notifications](notifications/) | Manages user notifications.                                      |
 | [payment](payment/)             | Manages payments and interacts with the Daraja API for payments. |
 | [wallet](wallet/)               | Manages user wallets.                                            |
 
