@@ -45,13 +45,13 @@ This is a high-level view of how the different microservices interact with each 
 
 ### Backend services
 
-| Services                        | Description                                                 |
-| ------------------------------- | ----------------------------------------------------------- | --- |
-| [users](users/)                 | Provides user management, authentication and authorization. |
-| [bet](bet/)                     | Manages All Bet Operations                                  |     |
-| [notifications](notifications/) | Manages Sending Users Notifications                         |
-| [payment](payment/)             | Manages Payments Interacts with Daraja Api for Payments     |
-| [wallet](wallet/)               | Manages Users Walet.                                        |
+| Services                        | Description                                                      |
+| ------------------------------- | ---------------------------------------------------------------- |
+| [users](users/)                 | Provides user management, authentication, and authorization.     |
+| [bet](bet/)                     | Manages all bet operations.                                      |
+| [notifications](notifications/) | Manages sending user notifications.                              |
+| [payment](payment/)             | Manages payments and interacts with the Daraja API for payments. |
+| [wallet](wallet/)               | Manages user wallets.                                            |
 
 ### Frontend service
 
