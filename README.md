@@ -2,7 +2,7 @@
 
 **Status**: _Work-in-progress. Please create issues or pull requests if you have ideas for improvement._
 
-The **BETSAFI Serverless Platform** is an implementation of a serverless backend for a . Functionalities are split across multiple micro-services that communicate either through asynchronous messages over [Amazon EventBridge](https://aws.amazon.com/eventbridge/) or over synchronous APIs.
+The **BETSAFI Serverless Platform** is an implementation of a serverless backend for a Betting Site . Functionalities are split across multiple micro-services that communicate either through asynchronous messages over [Amazon EventBridge](https://aws.amazon.com/eventbridge/) or over synchronous APIs.
 
 <!-- ## Getting started -->
 

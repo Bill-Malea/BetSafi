@@ -42,34 +42,6 @@ class MandatoryParametersRule(CloudFormationLintRule):
         ]
 
 
-class Python39Rule(CloudFormationLintRule):
-    """
-    Check for Python3.9 usage
-    """
-
-    id = "E9001"
-    shortdesc = "Python3.9 Lambda usage"
-    description = "Ensure that Python3.9 is used by all Lambda functions"
-    tags = ["ecommerce", "lambda"]
-
-    _runtime = "python3.9"
-    _message = "Function is using {} runtime instead of {}"
-
-    def match(self, cfn):
-        """
-        Match against Lambda functions not using python3.9
-        """
-
-        matches = []
-
-        for key, value in cfn.get_resources(["AWS::Lambda::Function"]).items():
-            if value.get("Properties").get("Runtime") != self._runtime:
-                matches.append(RuleMatch(
-                    ["Resources", key],
-                    self._message.format(value.get("Properties").get("Runtime"), self._runtime)
-                ))
-
-        return matches
 
 
 class LambdaLogGroupRule(CloudFormationLintRule):

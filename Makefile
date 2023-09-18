@@ -108,13 +108,7 @@ tests-unit-%:
 	@echo "[*] $(ccblue)tests-unit $*$(ccend)"
 	@${MAKE} -C $* tests-unit
 
-# End-to-end tests
-tests-e2e:
-	@tools/tests-e2e
 
-# Performance tests
-tests-perf:
-	@tools/tests-perf
 
 #################
 # SETUP TARGETS #
@@ -169,9 +163,7 @@ npm-install:
 
 # Create the entire pipeline
 bootstrap-pipeline:
-	# Deploy in different environments
-	@${MAKE} all ENVIRONMENT=tests
-	@${MAKE} all ENVIRONMENT=staging
+	# Deploy to production environments
 	@${MAKE} all ENVIRONMENT=prod
 	
 	
