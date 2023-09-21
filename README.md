@@ -22,7 +22,7 @@ This is a high-level view of how the different microservices interact with each 
 
 **Communication/Messaging**:
 
-- [AWS AppSync](https://aws.amazon.com/appsync/) for interactions between users and the ecommerce platform.
+- [AWS AppSync](https://aws.amazon.com/appsync/) for interactions between users and betsafi platform.
 - [Amazon API Gateway](https://aws.amazon.com/api-gateway/) for service-to-service synchronous communication (request/response).
 - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) for service-to-service asynchronous communication (emitting and reacting to events).
 
